@@ -8,7 +8,7 @@ html = lxml.html.parse(url2)
 # packages = html.xpath('//table[@class="gTable clr"]/tr/td/span/text()') # get the text inside all "<tr><td><a ...>text</a></td></tr>"
 # print packages
 
-packages = html.xpath('//table/tr/td/span/text()')
+packages = html.xpath('//table/tbody/tr/td/span/text()')
 # test = html.xpath("//tr/td/a/@href")
 
 A = {}
