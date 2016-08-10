@@ -2,7 +2,7 @@ import sys
 from PyQt4.QtGui import * 
 from PyQt4.QtCore import *
 from PyQt4.QtWebKit import *
-from lxml import html
+import lxml.html
 
 class Render(QWebPage):
   def __init__(self, url):
@@ -26,7 +26,7 @@ result = r.frame.toHtml()
 formatted_result = str(result.toAscii())
 
 #Next build lxml tree from formatted_result
-tree = html.fromstring(formatted_result)
+tree = lxml.html.fromstring(formatted_result)
 
 #Now using correct Xpath we are fetching URL of archives
 archive_links = tree.xpath('//table/tbody/tr/td/nobr/text()')
