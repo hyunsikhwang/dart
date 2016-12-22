@@ -18,3 +18,10 @@
 - 보고서 일련번호 
 
 - json 페이지 기준
+
+
+#ext_fnguide.py
+
+- fnguide 에서 종목별 주요 valuation 값(PER, PBR, 시가배당률 등) 추출
+
+- lxml parser
