@@ -22,4 +22,4 @@
 
 #ext_Investing.py
 
-- Investing.com 에서 한국 채권 수익률 정보 
+- Investing.com 에서 한국 채권 수익률 정보 추출 
